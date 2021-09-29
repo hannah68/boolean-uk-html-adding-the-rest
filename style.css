@@ -4,8 +4,15 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .grid-container{
-    height: 100vh;
+    height: 70vh;
     width: 1200px;
     display: grid;
     grid-template-rows: 1fr 5fr;
@@ -15,52 +22,52 @@
 
 /* header================ */
 .header{
-    background-color: antiquewhite;
+    background-color:#fff;
     width: 100%;
 }
 nav{
-    width: 80%;
+    width: 76%;
     height: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 5fr 3fr;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 5px;
     
 }
 
 .box1, .box2, .box3{
-    border: 4px dotted #000;
+    border: 4px dotted rgb(142, 199, 245);
     padding: 10px;
     margin-right: 5px;
     border-radius: 5px;
 }
 
 .box1{
-    background-color: blueviolet;
+    background-color: #fff;
     padding: 18px 5px;
 }
 
 .box2{
-    background-color: chartreuse;
+    background-color: #fff;
 }
 
 .box2 .search-box{
     width: 10rem;
-    border: 2px solid #000;
+    border: 2px solid rgb(142, 199, 245);
     padding: 6px;
     border-radius: 5px;
 }
 
 .box3{
-    background-color: firebrick;
+    background-color: #fff;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
 
 .links{
-    border: 2px dotted #fff;
+    border: 2px dotted rgb(142, 245, 190);
     padding: 6px;
     margin-right: 6px;
 }
@@ -70,14 +77,14 @@ nav{
 main{
     width: 100%;
     height: 100%;
-    background-color: #2196f3;
+    background-color: rgb(221, 221, 221);
 }
 
 .container{
     width: 80%;
     height: 100%;
     margin: 0 auto;
-    background-color: #2196f3;
+    background-color: rgb(221, 221, 221);
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
@@ -90,17 +97,18 @@ main{
 }
 
 .left1{
-    background-color: honeydew;
+    background-color: #fff;
     margin-bottom: 1rem;
-    border: 2px dashed #000;
+    border: 2px dashed rgb(142, 199, 245);
     display: grid;
     grid-template-rows: 4fr 1fr 1fr 1fr;
     padding: 5px;
 }
 
 .left1-box{
-    border: 2px dashed #000;
+    border: 2px dashed rgb(142, 245, 190);
     margin-bottom: 5px;
+    padding: 1rem;
 }
 
 img{
@@ -110,9 +118,10 @@ img{
 }
 
 .left2{
-    background-color: rgb(123, 240, 123);
+    background-color: #fff;
     margin-bottom: 1rem;
-    border: 2px dashed #000;
+    border: 2px dashed rgb(142, 199, 245);
+    padding: 1rem;
 }
 
 /* middle column=============== */
@@ -123,16 +132,16 @@ img{
 }
 
 .middle-1{
-    background-color: khaki;
+    background-color: #fff;
     margin-bottom: 1rem;
-    border: 2px dashed #000;
+    border: 2px dashed rgb(142, 199, 245);
     display: grid;
     grid-template-rows: repeat(2,1fr);
     padding: 5px;
 }
 
 .middle-1 .middle-1A{
-    border: 2px dashed #000;
+    border: 2px dashed rgb(142, 245, 190);
     margin-bottom: 5px;
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -151,36 +160,41 @@ img{
 
 .middle-1A .triangle{
     border: 2px dashed red;
+    padding: 1rem;
 }
 
 
 .middle-1 .middle-1B{
-    border: 2px dashed #000;
+    border: 2px dashed rgb(142, 245, 190);
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 5px;
-    padding: 5px;
+    padding: 1rem;
 }
 
 .middle-1B .tr{
     border: 2px dashed red;
+    text-align: center;
+    
 }
 
 .middle-2{
-    background-color: rebeccapurple;
-    border: 2px dashed #000;
+    background-color: #fff;
+    border: 2px dashed rgb(142, 199, 245);
     display: grid;
     grid-template-rows: repeat(2,1fr);
     padding: 5px;
 }
 
 .middle-2 .middle-2A{
-    border: 2px dashed #000;
+    border: 2px dashed rgb(142, 245, 190);
     margin-bottom: 5px;
+    padding: 1rem;
 }
 
 .middle-2 .middle-2B{
-    border: 2px dashed #000;
+    border: 2px dashed rgb(142, 245, 190);
+    padding: 1rem;
 }
 
 /* right column====================== */
@@ -195,23 +209,61 @@ img{
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     padding: 5px;
-    background-color: seagreen;
-    border: 2px dashed #000;
+    background-color:#fff;
+    border: 2px dashed rgb(142, 199, 245);
 }
 
 .right1-box{
-    border: 2px dashed #000;
+    border: 2px dashed rgb(142, 245, 190);
     margin-bottom: 5px;
+    padding: 1rem;
 }
 
 .right2{
-    background-color: thistle;
-    border: 2px dashed #000;
+    background-color: #fff;
+    border: 2px dashed rgb(142, 199, 245);
+    padding: 1rem;
 }
 
 .right3{
-    background-color: yellowgreen;
-    border: 2px dashed #000;
+    background-color: #fff;
+    border: 2px dashed rgb(142, 199, 245);
+    padding: 1rem;
+}
+
+/*media quary=======  */
+@media screen and (max-width: 980px){
+    .right{
+        display: none;
+    }
+    .container{
+        grid-template-columns: 1fr 2fr;
+    }
+    
+}
+@media screen and (max-width: 765px){
+    .grid-container{
+        width: 700px;
+        display: grid;
+        grid-template-rows: 1fr 5fr;
+        margin: 0 auto;
+    }
+    .container{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .left{
+       margin: 2rem 2rem 1rem 2rem;
+    }
+    .middle{
+       margin: 1rem 2rem 1rem 2rem;
+    }
+    .right{
+       margin: 1rem 2rem 2rem 2rem;
+    }
+    
 }
 
 
